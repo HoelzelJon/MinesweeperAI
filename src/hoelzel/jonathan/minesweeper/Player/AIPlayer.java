@@ -15,7 +15,7 @@ public abstract class AIPlayer implements Player {
         NO_PRINT, PRINT_EACH_STEP, PRINT_WHEN_THINKING
     }
 
-    private PrintMode print;
+    private final PrintMode print;
     private Collection<PlayerAction> queuedActions;
 
     protected AIPlayer(PrintMode aPrint) {

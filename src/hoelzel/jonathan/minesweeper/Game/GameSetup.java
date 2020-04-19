@@ -1,9 +1,9 @@
 package hoelzel.jonathan.minesweeper.Game;
 
 public class GameSetup {
-    private int width;
-    private int height;
-    private int numMines;
+    private final int width;
+    private final int height;
+    private final int numMines;
 
     public GameSetup(int aWidth, int aHeight, int aNumMines) {
         width = aWidth;

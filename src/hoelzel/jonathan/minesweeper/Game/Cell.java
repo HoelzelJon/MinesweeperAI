@@ -3,8 +3,8 @@ package hoelzel.jonathan.minesweeper.Game;
 import static hoelzel.jonathan.minesweeper.Game.CellStatus.*;
 
 public class Cell {
-    private boolean hasMine;
-    private int neighborsVal;
+    private final boolean hasMine;
+    private final int neighborsVal;
     private CellStatus status;
 
     public Cell(boolean mine, int neighbors) {

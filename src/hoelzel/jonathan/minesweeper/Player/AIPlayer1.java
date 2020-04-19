@@ -14,7 +14,7 @@ import static hoelzel.jonathan.minesweeper.Util.countIterable;
 import static hoelzel.jonathan.minesweeper.Util.toList;
 
 public class AIPlayer1 extends AIPlayer {
-    private Player backup;
+    private final Player backup;
 
     public AIPlayer1(PrintMode doPrintouts, Player aBackup) {
         super(doPrintouts);

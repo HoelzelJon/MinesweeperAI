@@ -12,8 +12,8 @@ import static hoelzel.jonathan.minesweeper.Game.PlayerAction.ActionType.FLAG;
 import static hoelzel.jonathan.minesweeper.Util.*;
 
 public class AIPlayer2 extends AIPlayer {
-    private Player backup;
-    private int maxUnclickedCellsForChecking;
+    private final Player backup;
+    private final int maxUnclickedCellsForChecking;
 
     public AIPlayer2(PrintMode doPrintouts, Player aBackup, int aMaxUnclickedCellsForChecking) {
         super(doPrintouts);

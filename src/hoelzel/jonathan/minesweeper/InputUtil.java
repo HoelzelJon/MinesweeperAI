@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class InputUtil {
-    public static Scanner in = new Scanner(System.in);
+    public static final Scanner in = new Scanner(System.in);
 
     public static int getInt(String prompt) {
         while (true) {

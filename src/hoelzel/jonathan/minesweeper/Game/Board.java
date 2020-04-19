@@ -8,9 +8,9 @@ import static hoelzel.jonathan.minesweeper.Util.countIterable;
 import static hoelzel.jonathan.minesweeper.Util.toList;
 
 public class Board {
-    private Cell[][] cells; // indexed [x][y]
-    private int width;
-    private int height;
+    private final Cell[][] cells; // indexed [x][y]
+    private final int width;
+    private final int height;
 
     static Board generateBoard(int width, int height, int nMines, Coord initialClick) {
         CoordFilter avoidInitialClick = (x, y) -> Math.abs(x - initialClick.x()) > 1 || Math.abs(y - initialClick.y()) > 1;

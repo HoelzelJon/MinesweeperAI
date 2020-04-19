@@ -7,14 +7,13 @@ import hoelzel.jonathan.minesweeper.Game.PlayerAction;
 import java.util.*;
 
 import static hoelzel.jonathan.minesweeper.Game.CellStatus.*;
-import static hoelzel.jonathan.minesweeper.Game.CellStatus.UNCLICKED;
 import static hoelzel.jonathan.minesweeper.Game.PlayerAction.ActionType.CLICK;
 import static hoelzel.jonathan.minesweeper.Game.PlayerAction.ActionType.FLAG;
 import static hoelzel.jonathan.minesweeper.Util.*;
 
 public class AIPlayer3 extends AIPlayer {
-    private RandomAI backup;
-    private int maxUnclickedCellsForChecking;
+    private final RandomAI backup;
+    private final int maxUnclickedCellsForChecking;
     private Map<Set<Coord>, MineRange> minesPerUnclickedGroup;
 
     public AIPlayer3(PrintMode doPrintouts, int aMaxUnclickedCellsForChecking, RandomAI aBackup) {
@@ -24,8 +23,8 @@ public class AIPlayer3 extends AIPlayer {
     }
 
     static class MineRange {
-        int min;
-        int max;
+        final int min;
+        final int max;
 
         private MineRange(int aMin, int aMax) {
             min = aMin;

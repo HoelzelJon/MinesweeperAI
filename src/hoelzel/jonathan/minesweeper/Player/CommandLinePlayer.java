@@ -12,7 +12,7 @@ import static hoelzel.jonathan.minesweeper.Game.PlayerAction.ActionType.FLAG;
 import static hoelzel.jonathan.minesweeper.InputUtil.*;
 
 public class CommandLinePlayer implements Player {
-    private static Map<String, PlayerAction.ActionType> actionMap = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+    private static final Map<String, PlayerAction.ActionType> actionMap = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 
     static {
         actionMap.put("C", CLICK);

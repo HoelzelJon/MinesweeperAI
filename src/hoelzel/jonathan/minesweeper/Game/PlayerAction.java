@@ -7,8 +7,8 @@ public class PlayerAction {
         FLAG, CLICK
     }
 
-    private ActionType type;
-    private Coord coord;
+    private final ActionType type;
+    private final Coord coord;
 
     public PlayerAction(ActionType aType, Coord aCoord) {
         type = aType;

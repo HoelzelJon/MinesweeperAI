@@ -53,10 +53,10 @@ public class Coord {
     }
 
     private static class CoordIterator implements Iterator<Coord> {
-        private int minX;
-        private int maxX;
-        private int maxY;
-        private CoordFilter filter;
+        private final int minX;
+        private final int maxX;
+        private final int maxY;
+        private final CoordFilter filter;
         private int x;
         private int y;
 

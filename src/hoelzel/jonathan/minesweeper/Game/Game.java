@@ -8,9 +8,9 @@ import static hoelzel.jonathan.minesweeper.Game.PlayerAction.ActionType.*;
 
 public class Game {
     private Board board;
-    private int boardWidth;
-    private int boardHeight;
-    private int numMines;
+    private final int boardWidth;
+    private final int boardHeight;
+    private final int numMines;
     private int numFlags;
     private boolean clickedMine;
     private int numUnclickedCells;
