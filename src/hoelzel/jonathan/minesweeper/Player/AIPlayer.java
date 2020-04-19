@@ -25,7 +25,7 @@ public abstract class AIPlayer implements Player {
 
     protected abstract Collection<PlayerAction> getKnownGoodActions(Board b, int minesRemaining);
 
-    protected abstract PlayerAction getProbableGoodAction(Board b, int minesRemainig);
+    protected abstract PlayerAction getProbableGoodAction(Board b, int minesRemaining);
 
     private void print(Board b, int minesRemaining) {
         System.out.println("Mines Remaining: " + minesRemaining);

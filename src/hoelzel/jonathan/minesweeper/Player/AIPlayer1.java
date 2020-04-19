@@ -41,7 +41,7 @@ public class AIPlayer1 extends AIPlayer {
         return ret;
     }
 
-    protected PlayerAction getProbableGoodAction(Board b, int minesRemainig) {
-        return backup.getAction(b, minesRemainig);
+    protected PlayerAction getProbableGoodAction(Board b, int minesRemaining) {
+        return backup.getAction(b, minesRemaining);
     }
 }
