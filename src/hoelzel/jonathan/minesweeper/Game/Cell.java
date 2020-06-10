@@ -25,13 +25,13 @@ public class Cell {
         return status;
     }
 
-    void click() {
+    public void click() {
         if (status != FLAGGED) {
             this.status = REVEALED;
         }
     }
 
-    void flag() {
+    public void flag() {
         if (status == FLAGGED) {
             this.status = UNCLICKED;
         } else if (status != REVEALED) {

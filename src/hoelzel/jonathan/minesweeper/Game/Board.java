@@ -20,6 +20,12 @@ public class Board {
         return new Board(width, height, coordsWithMines);
     }
 
+    public Board(Cell[][] cells) {
+        this.cells = cells;
+        this.width = cells.length;
+        this.height = cells[0].length;
+    }
+
     public String prettyStr() {
         StringBuilder ret = new StringBuilder();
         for (int y = height - 1; y >= 0; y --) {

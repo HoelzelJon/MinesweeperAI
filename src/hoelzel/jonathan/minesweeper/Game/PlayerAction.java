@@ -36,4 +36,12 @@ public class PlayerAction {
     public int hashCode() {
         return Objects.hash(type, coord);
     }
+
+    @Override
+    public String toString() {
+        return "PlayerAction{" +
+                "type=" + type +
+                ", coord=" + coord +
+                '}';
+    }
 }

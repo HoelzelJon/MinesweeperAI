@@ -98,4 +98,9 @@ public class Coord {
             return ret;
         }
     }
+
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
 }
